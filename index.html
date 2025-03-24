@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Movers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <button id="toggle-sidebar">
+            <img src="acc/burger-svgrepo-com.svg" alt="Toggle Sidebar" width="20" height="20" />
+        </button>
+
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#video">Watch</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Mission">Mission</a></li>
+            <li><a href="#Vision">Vision</a></li>
+        </ul>
+    </nav>
+
+    
+    <section id="Home">
+        <img src="acc/ecologo.jpg" alt="">
+    </section>
+
+    <section id="video">
+        <video controls  src="/acc/vidar.mp4" width="900px"></video>
+        <h2></h2>
+    </section>
+
+    <section id="About">Who are we? At EcoMovers,<br> we believe that relocating should be both<br> efficient and environmentally responsible. </section>
+
+    <section id="Mission">To Provide exceptional, eco-friendly moving solutions that minimize environmental impact,<br> promoe sustainability, and ensure a stress-free relocation experience for our clients. </section>
+
+    <section id="Vision">To lead the moving industry in sustainable practices, inspiring communities to <br> embrace environmentally responsible choices while delivering superior service and care. </section>
+
+    </section>
+
+    <div class="sidebar" id="sidebar">
+
+        <h2 id="sec-title">Eco Movers</h2>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Mission">Mission</a></li>
+            <li><a href="#Vision">Vision</a></li>
+            <span id="divider">Activities</span>
+            <li><a href="Jayr.html" target="_blank">Jayr Requiero</a></li>
+            <li><a href="Nathan.html" target="_blank">Nataniel Thomas</a></li>
+            <li><a href="Rhesty.html" target="_blank">Rhesty Nabokiag</a></li>
+        </ul>
+    </div>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="https://x.com/?lang=en" target="_blank"><i 
+                    class="fa-brands fa-x-twitter"></i></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> </a>
+
+                <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-sidebar');
+        const svgImage = toggleButton.querySelector('img');
+        const sidebar = document.getElementById('sidebar');
+
+        toggleButton.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+            svgImage.classList.toggle('hidden'); // Toggle hidden class
+        });
+    </script>
+    <style>
+        .hidden {
+            display: none; /* Hide the SVG when the sidebar is active */
+        }
+    </style>
+
+</body>
+</html>

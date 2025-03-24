@@ -1,0 +1,16 @@
+body {
+    background: #829ae2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200vh 60vw;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}

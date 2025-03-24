@@ -1,0 +1,164 @@
+body {
+    background: #829ae2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 200vh 60vw;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(35, 35, 47, 0.8);
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #468bc0;
+}
+
+/* Sections */
+section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem;
+    color: black;
+    font-size: 25px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0; /* Change position to left */
+    top: 0;
+    width: 190px; /* Adjust width as needed */
+    height: 100%; /* Full height */
+    background: rgb(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    padding: 1rem; /* Padding */
+    overflow-y: auto; /* Scroll if content overflows */
+    transform: translateX(-100%); /* Initially hide the sidebar */
+    transition: transform 0.3s ease; /* Add transition for animation */
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Show the sidebar when active */
+}
+
+.sidebar ul li{
+    
+    align-items: start;
+}
+
+.sidebar a {
+    color: #d8d4d4; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    align-items: center;
+}
+
+.sidebar a:hover {
+    color: #468bc0; /* Change color on hover */
+}
+
+#sec-title {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: start;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: .2rem;
+}
+
+.list-act a { 
+    text-decoration: none;
+    color: crimson;
+    padding: 1rem;
+}
+
+
+#toggle-sidebar{
+   position: absolute;
+   padding: 4px;
+   left: 1rem;
+   background-color:white;
+   opacity: 0.2;
+   
+}
+
+
+
+#divider{
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+    padding: 0px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    color: white;
+    text-decoration:none ;
+    padding: 0px;
+    margin:20px ;
+    border-radius: 30%;
+}
+
+.socialIcons a i{
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.9;
+}
+
+
